@@ -29,7 +29,6 @@ class Application
     else
       return "Couldn't find #{search_term}"
     end
-    cart
   end
   
   def cart
