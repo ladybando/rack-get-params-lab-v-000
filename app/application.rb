@@ -39,7 +39,7 @@ class Application
     
      if @@cart.include?(items)
        items.each do |item|
-         resp.write "#{item} is one of our items"
+         return "#{item} is one of our items"
        end
     else
       return "Your cart is empty"
