@@ -20,10 +20,6 @@ class Application
          return "#{@@items}\n"
        end
     else
-      return "Your cart is empty"
-    end
-  end
-    else
       resp.write "Your cart is empty"
     end
 
