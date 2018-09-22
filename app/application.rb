@@ -41,6 +41,8 @@ class Application
          return "#{item}\n"
        end
      end
+     
+     def add
   
   end
   
