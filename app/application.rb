@@ -17,10 +17,9 @@ class Application
       resp.write handle_search(search_term)
     elsif req.path.match(/cart/)
        if @@cart.empty?
-         return "#{@@items}\n"
-       end
+         resp.write "Your cart is empty"
     else
-      resp.write "Your cart is empty"
+      
     end
 
     resp.finish
