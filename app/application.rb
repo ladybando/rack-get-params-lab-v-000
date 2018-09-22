@@ -41,8 +41,6 @@ class Application
        items.each do |item|
          return "#{item}\n"
        end
-    else
-      return "Your cart is empty"
-    end
+     end
   end
 end
