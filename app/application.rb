@@ -16,7 +16,7 @@ class Application
       search_term = req.params["q"]
       resp.write handle_search(search_term)
     elsif req.path.match(/cart/)
-       if items.each do |item|
+       if @@cart.include?(items)
          return "#{item}\n"
        end
     else
