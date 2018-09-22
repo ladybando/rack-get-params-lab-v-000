@@ -35,19 +35,4 @@ class Application
     end
   end
   
-  def cart
-    
-    items = @@items
-    @@cart << items
-    
-     if @@cart.include?(items)
-       items.each do |item|
-         return "#{item}\n"
-       end
-     end
-     
-    def add
-    end
-  end
-  
 end
