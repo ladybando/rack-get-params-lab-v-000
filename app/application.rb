@@ -20,6 +20,7 @@ class Application
     end
 
     resp.finish
+    binding.pry
   end
 
   def handle_search(search_term)
@@ -32,7 +33,7 @@ class Application
   end
   
   def cart
-    binding.pry
+    
     items = @@items
     @@cart << items
     
