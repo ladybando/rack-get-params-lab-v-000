@@ -15,6 +15,14 @@ class Application
     elsif req.path.match(/search/)
       search_term = req.params["q"]
       resp.write handle_search(search_term)
+     elsif @@cart.include?(items)
+       items.each do |item|
+         return "#{item}\n"
+       end
+    else
+      return "Your cart is empty"
+    end
+  end
     else
       resp.write "Your cart is empty"
     end
