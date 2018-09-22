@@ -20,7 +20,7 @@ class Application
     end
 
     resp.finish
-    binding.pry
+#binding.pry
   end
 
   def handle_search(search_term)
