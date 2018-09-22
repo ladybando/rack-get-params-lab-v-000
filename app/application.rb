@@ -17,7 +17,7 @@ class Application
       resp.write handle_search(search_term)
     elsif req.path.match(/cart/)
        if @@cart.include?(@@items)
-         return "#{item}\n"
+         return "#{@@items}\n"
        end
     else
       return "Your cart is empty"
