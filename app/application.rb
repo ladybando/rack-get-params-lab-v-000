@@ -22,11 +22,8 @@ class Application
         @@cart.each do |item|
         resp.write "#{item}\n"
       end
-      
     end
-
     resp.finish
-#binding.pry
   end
 
   def handle_search(search_term)
