@@ -42,7 +42,7 @@ class Application
        end
      end
      
-     def add
+    def add
     end
   end
   
